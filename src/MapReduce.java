@@ -11,8 +11,8 @@ public class MapReduce {
 
     public static void main(String[] args) throws Exception {
 
-        String csvFile = "/Users/glennhealy/Dropbox/Uni/Final Year/Advanced Computing/Courswork/AComp_Passenger_data_no_error.csv";
-       // String csvFile = "/Users/glennhealy/Dropbox/Uni/Final Year/Advanced Computing/Courswork/AComp_Passenger_data.csv";
+        String csvFile = "/Users/glennhealy/Dropbox/Uni/Reducer Year/Advanced Computing/Courswork/AComp_Passenger_data_no_error.csv";
+       // String csvFile = "/Users/glennhealy/Dropbox/Uni/Reducer Year/Advanced Computing/Courswork/AComp_Passenger_data.csv";
 
         Scanner scanner = new Scanner(new File(csvFile));
         while (scanner.hasNext()) {

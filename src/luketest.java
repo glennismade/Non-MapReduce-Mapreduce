@@ -29,11 +29,15 @@ public class luketest {
             }
 
             ArrayList<String> lineBuffer = new ArrayList<>();
+            ArrayList<String> errorBuffer = new ArrayList<>();
 
             while (fileInput.hasNextLine()) {
                 String line = fileInput.nextLine();
-              //  char ch = line.charAt(0);
-                lineBuffer.add(line);
+                if(line.matches("[\\w\\,]{12}[\\w\\,]{8}[A-Z\\,]{4}[A-Z\\,]{4}[\\d\\,]{11}[\\d]{1,4}")) {
+                    lineBuffer.add(line);
+                }else errorBuffer.add(line);
+                    //  char ch = line.charAt(0);
+
 
                 //String[] values = line.split(",");
                // Map<String, Integer> reducer = new HashMap<String, Integer>();
@@ -69,6 +73,7 @@ public class luketest {
         return mapdata;
 
     }
+
 
 
 }
