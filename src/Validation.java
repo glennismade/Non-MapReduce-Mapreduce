@@ -5,5 +5,5 @@ import java.util.regex.*;
 
 public class Validation {
 
-    final Pattern pattern1 = pattern.compile();
+    final Pattern pattern1 = Pattern.compile(String regex);
 }
