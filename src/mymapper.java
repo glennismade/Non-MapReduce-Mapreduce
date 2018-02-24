@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class mymapper {
 
         public static void main(String[] args) throws Exception {
-//          BufferedReader br = new BufferedReader(new FileReader("/Users/glennhealy/Dropbox/Uni/Reducer Year/Advanced Computing/Courswork/AComp_Passenger_data_no_error.csv"));
-            BufferedReader br = new BufferedReader(new FileReader("/Users/glennhealy/Dropbox/Uni/Reducer Year/Advanced Computing/Courswork/AComp_Passenger_data.csv"));
+         BufferedReader br = new BufferedReader(new FileReader("/Users/glennhealy/Dropbox/Uni/Reducer Year/Advanced Computing/Courswork/AComp_Passenger_data_no_error.csv"));
+//            BufferedReader br = new BufferedReader(new FileReader("/Users/glennhealy/Dropbox/Uni/Reducer Year/Advanced Computing/Courswork/AComp_Passenger_data.csv"));
 
             String line = null;
 
