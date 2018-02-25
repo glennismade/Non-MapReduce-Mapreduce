@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Advanced-Computing.iml" filepath="$PROJECT_DIR$/Advanced-Computing.iml" />
       <module fileurl="file://$PROJECT_DIR$/MapReduce/MapReduce.iml" filepath="$PROJECT_DIR$/MapReduce/MapReduce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Old Crap/Old Crap.iml" filepath="$PROJECT_DIR$/Old Crap/Old Crap.iml" />
     </modules>
   </component>
 </project>
