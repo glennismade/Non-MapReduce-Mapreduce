@@ -1,3 +1,9 @@
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.security.Key;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,15 +17,18 @@ public class Reducer extends Thread {
     HashMap<String, FlightData> flightDetails = new HashMap<>();
     String key;
     ArrayList<FlightData> flightDataArrayList;
+    FlightData theFlight = flightDetails.get(key);
 
+
+    public Reducer(){
+
+    }
     public Reducer (String Key, ArrayList<FlightData> flightDataArrayList) {
 
         this.flightDataArrayList = flightDataArrayList;
         this.key = Key;
 
     }
-    FlightData theFlight = flightDetails.get(key);
-
 
     @Override
     public void run() {
@@ -28,17 +37,43 @@ public class Reducer extends Thread {
             flightDataHashMap.put(X.getPassengerID(), X.getPassengerID());
             flightDetails.put(key, X);
         }
+        //  System.out.println("Flight " + key + " has " + flightDataHashMap.size() + " passengers ");
+        //  System.out.println("Flight " + flightDetails);
 
     }
+
+/*
+    public void writeMaptoFile() throws Exception{
+        Path path = Paths.get("reduced.txt");
+      for (String X: flightDataHashMap.keySet()) {
+          try (BufferedWriter writer = Files.newBufferedWriter(path)) {
+              writer.write("Flight " + key + " has " + flightDataHashMap + " passengers ");
+          }
+      }
+
+    }
+    */
+
+    /*
+    int X=0;
+    public void methodpicker(){
+        Mapper methodpick = new Mapper();
+        methodpick.job = X;
+        if(X== 2){
+            getTheflight(theFlight);
+        }else numPassengers(key, flightDataHashMap);
+    }
+
+    */
 
     public void getTheflight(FlightData theFlight){
         System.out.println("Flight " + theFlight);
-
     }
 
-    public void numPassengers(Key key, HashMap flightDataHashMap){
+    public void numPassengers(String key, HashMap flightDataHashMap){
         System.out.println("Flight " + key + " has " + flightDataHashMap.size() + " passengers ");
     }
+
 
 
     //Reducer job1 = new Reducer(reduced, data);

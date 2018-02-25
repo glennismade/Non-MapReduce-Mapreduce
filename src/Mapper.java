@@ -11,9 +11,10 @@ import java.io.FileWriter;
 /**
  * Created by glennhealy on 03/02/2018.
  */
-public class luketest {
+public class Mapper {
 
     String str1;
+    static int job;
 
     public static void main(String[] args) {
 
@@ -82,7 +83,8 @@ public class luketest {
         System.out.println("3: number of pasengers per flight \n");
 
         Scanner jobselection = new Scanner(System.in);
-        int job = jobselection.nextInt();
+
+         job = jobselection.nextInt();
 
         if (job == 3) {
             for (String key : mapdata.keySet()) {

@@ -80,6 +80,6 @@ public class FlightData {
     public void setArrivalTime(Date arrivalTime) {
         this.arrivalTime = arrivalTime;
 
-       // arrivalTime = departTime
+      // arrivalTime = departTime + flightTimeMins * 60;
     }
 }
