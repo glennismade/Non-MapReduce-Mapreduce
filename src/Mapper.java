@@ -1,12 +1,10 @@
 import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.security.Key;
 import java.util.*;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.SynchronousQueue;
 import java.util.regex.*;
-import java.io.FileWriter;
 
 
 /**
@@ -55,7 +53,19 @@ public class Mapper {
                 String line = fileInput.nextLine();
                 if (line.matches("[A-Z]{3}[0-9]{4}[A-Z]{2}[0-9]{1}[\\,]{1}[A-Z]{3}[0-9]{4}[A-Z]{1}[\\,]{1}[A-Z]{3}[\\,]{1}[A-Z]{3}[\\,]{1}[0-9]{10}[\\,]{1}[0-9]{1,4}")) { //regex to validate the line is not empty. && meets the basic requirements.
                     lineBuffer.add(line);
-                } else errorBuffer.add(line);
+                } else {
+                    errorBuffer.add(line);
+                    File errors = new File("errors.log");
+                    FileWriter EW = null;
+                    try {
+                        EW = new FileWriter(errors);
+                    }   catch (IOException x){
+                        x.printStackTrace();
+                    }
+                    PrintWriter epw = new PrintWriter(EW);
+                    epw.append(line);
+                    epw.close();
+                }
 
 
 //            System.out.println("error found at line:" + errorBuffer); //was using to check buffer error working.

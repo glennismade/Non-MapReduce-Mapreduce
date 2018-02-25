@@ -18,11 +18,9 @@ public class Reducer1 {
 
             output += "Flight " + key + " Has " + data.size() + " Passengers on boared " + "\n";
        }
+        System.out.println(output);
+             for (int x = 0; x < data.size(); x++) {
 
-        System.out.println(output); //printing output to screen
-        for (int x = 0; x < data.size(); x++) { //looping through output to write to file
-
-            //writing to file
             File file = new File("job1.csv");
             FileWriter fw = null;
             try {
@@ -64,7 +62,7 @@ public class Reducer1 {
         return output;
     }
 
-    //flight details, couldn't get the data to show from.
+    //flight details, couldnt get the data to show from.
     public static String reducerThree(String key,ArrayList<FlightData> data){
         String output = "";
         output += "FlightID -> "+key+ " has " + data.size() + " Passengers "+  "\n";
@@ -75,5 +73,7 @@ public class Reducer1 {
         System.out.println(output);
         return output;
     }
+
+
 
 }

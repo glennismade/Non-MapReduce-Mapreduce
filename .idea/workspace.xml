@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69cd62ef-2bbc-46ea-a5ac-d81016fb6622" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/writetofile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Advanced-Computing/FlightData.class" afterPath="$PROJECT_DIR$/out/production/Advanced-Computing/FlightData.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AComp_Passenger_data(2).csv" afterPath="$PROJECT_DIR$/AComp_Passenger_data(2).csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FlightData.java" afterPath="$PROJECT_DIR$/src/FlightData.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mapper.java" afterPath="$PROJECT_DIR$/src/Mapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reducer1.java" afterPath="$PROJECT_DIR$/src/Reducer1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Validation.java" afterPath="$PROJECT_DIR$/src/Validation.java" />
     </list>
     <ignored path="Advanced-Computing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,6 +19,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Advanced-Computing$Mapper.coverage" NAME="Mapper Coverage Results" MODIFIED="1519600239309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -30,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Reducer1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Reducer1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Reducer1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.0383275">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,14 +43,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mapper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Mapper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Mapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.14990859">
+              <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2444#2452#0" expanded="true" />
+                <element signature="e#2839#2847#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,10 +161,10 @@
         <option value="$PROJECT_DIR$/src/luketest.java" />
         <option value="$PROJECT_DIR$/src/Reducer.java" />
         <option value="$PROJECT_DIR$/src/writetofile.java" />
-        <option value="$PROJECT_DIR$/src/Mapper.java" />
         <option value="$PROJECT_DIR$/src/Validation.java" />
         <option value="$PROJECT_DIR$/src/FlightData.java" />
         <option value="$PROJECT_DIR$/src/Reducer1.java" />
+        <option value="$PROJECT_DIR$/src/Mapper.java" />
       </list>
     </option>
   </component>
@@ -259,17 +260,17 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="56" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="58" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="57" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="580" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="577" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="54" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="56" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="58" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="57" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="580" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="577" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
@@ -690,7 +691,13 @@
       <option name="project" value="LOCAL" />
       <updated>1519538230492</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Given up trying to get it to work properly. &#10;&#10;got it basically working, improved the validation (regex mroe detailed) &#10;&#10;got basic file writing sorta working. &#10;&#10;job 1 works to screen and kinda to file &#10;job 2 doesnt work &#10;job 3 is incomplete. &#10;&#10;Not enough time left to complete properly. &#10;&#10;&#10;">
+      <created>1519597214270</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1519597214272</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -711,10 +718,11 @@
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.7222222" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32435465" sideWeight="0.46275946" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32435465" sideWeight="0.47496948" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772166" sideWeight="0.47557998" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32435465" sideWeight="0.53724056" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772166" sideWeight="0.47069597" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32435465" sideWeight="0.52503055" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2379349" sideWeight="0.48290598" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123931624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -723,7 +731,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35353535" sideWeight="0.62515265" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35353535" sideWeight="0.61294264" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -748,22 +756,41 @@
     <MESSAGE value="Got generation of Jobs 1 &amp; 2 working. &#10;&#10;reducer made. Just need to get file writing to work. &#10;&#10;small error in calling the methods from main class. &#10;&#10;" />
     <MESSAGE value="moved old files into oldcrap folder." />
     <MESSAGE value="followed friends advice, they provided info on issues i was having. &#10;&#10;Working on getting the reduced data written to files now. &#10;&#10;Need to update the regex to be compelete. &#10;&#10;need to correct the formatting/data of the 2nd reducer. &#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="followed friends advice, they provided info on issues i was having. &#10;&#10;Working on getting the reduced data written to files now. &#10;&#10;Need to update the regex to be compelete. &#10;&#10;need to correct the formatting/data of the 2nd reducer. &#10;&#10;" />
+    <MESSAGE value="Given up trying to get it to work properly. &#10;&#10;got it basically working, improved the validation (regex mroe detailed) &#10;&#10;got basic file writing sorta working. &#10;&#10;job 1 works to screen and kinda to file &#10;job 2 doesnt work &#10;job 3 is incomplete. &#10;&#10;Not enough time left to complete properly. &#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Given up trying to get it to work properly. &#10;&#10;got it basically working, improved the validation (regex mroe detailed) &#10;&#10;got basic file writing sorta working. &#10;&#10;job 1 works to screen and kinda to file &#10;job 2 doesnt work &#10;job 3 is incomplete. &#10;&#10;Not enough time left to complete properly. &#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Mapper.java</url>
-          <line>55</line>
+          <line>67</line>
           <properties />
-          <option name="timeStamp" value="102" />
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Mapper.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Mapper.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Mapper.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="105" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -828,7 +855,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2444#2452#0" expanded="true" />
+            <element signature="e#2839#2847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -893,7 +920,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2444#2452#0" expanded="true" />
+            <element signature="e#2839#2847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -958,7 +985,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2444#2452#0" expanded="true" />
+            <element signature="e#2839#2847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1286,17 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2444#2452#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Validation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1345,10 +1361,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Reducer1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0383275">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14990859">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2839#2847#0" expanded="true" />
           </folding>
         </state>
       </provider>
