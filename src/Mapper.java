@@ -55,6 +55,8 @@ public class Mapper {
                     lineBuffer.add(line);
                 } else {
                     errorBuffer.add(line);
+                    System.out.println("error found at line:" + errorBuffer); //was using to check buffer error working.
+
                     File errors = new File("errors.log");
                     FileWriter EW = null;
                     try {
@@ -68,7 +70,6 @@ public class Mapper {
                 }
 
 
-//            System.out.println("error found at line:" + errorBuffer); //was using to check buffer error working.
                 HashMap<String, ArrayList<FlightData>> test = mapper(lineBuffer);
                 ArrayList<String> keys = new ArrayList<String>(test.keySet());
                 for (int x = 0; x < keys.size(); x++) {
