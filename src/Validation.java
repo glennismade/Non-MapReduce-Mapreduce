@@ -11,6 +11,7 @@ public class Validation {
     public String regexResult;
 
     public static Matcher validate(String theReg, String str2Check) {
+        // TODO impliment better validation, as this one sucks
 
         final Pattern PtnPassenger = Pattern.compile(theReg);
         final Pattern PtnFlight = Pattern.compile(theReg);

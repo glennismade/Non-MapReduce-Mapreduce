@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class FlightData {
 
+    //variables to be assinged to each object type.
+
     private String passengerID;
     private String flightID;
     private char[] fromID = new char[3];
@@ -15,6 +17,7 @@ public class FlightData {
 
 //Constucter;
     public FlightData(String passengerID, String flightID, char[] fromID, char[] tooID, Date departTime, long flightTimeMins) {
+        //data objects (elements in the file)
         setPassengerID(passengerID);
         setFlightID(flightID);
         setFromID(fromID);
@@ -25,6 +28,8 @@ public class FlightData {
 
     }
 
+
+    //Getters & Setters
     public String getPassengerID() {
         return passengerID;
     }

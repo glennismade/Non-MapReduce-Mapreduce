@@ -19,7 +19,7 @@ public class Mapper {
 
     public static void main(String[] args) {
 
-
+        //prints main menue options - very basic but used to ensure program flow works.
         System.out.println(" \n please select a job \n");
         System.out.println("1: number of pasengers per flight \n");
         System.out.println("2: Number of flights per airport \n");
@@ -31,6 +31,7 @@ public class Mapper {
 
 
         //file reading - here.
+        System.out.println("Please enter a file directors and name (e.g. /documents/data/data.csv");
         Scanner filePathInput = new Scanner(System.in);
         String filePath = filePathInput.nextLine();
         File file = new File(filePath);
@@ -52,12 +53,12 @@ public class Mapper {
             //looping through the file line by line
             while (fileInput.hasNextLine()) {
                 String line = fileInput.nextLine();
-                if (line.matches("[\\w\\,]{12}[\\w\\,]{8}[A-Z\\,]{4}[A-Z\\,]{4}[\\d\\,]{11}[\\d]{1,4}")) { //regex to validate the line is not empty. && meets the basic requirements.
+                if (line.matches("[A-Z]{3}[0-9]{4}[A-Z]{2}[0-9]{1}[\\,]{1}[A-Z]{3}[0-9]{4}[A-Z]{1}[\\,]{1}[A-Z]{3}[\\,]{1}[A-Z]{3}[\\,]{1}[0-9]{10}[\\,]{1}[0-9]{1,4}")) { //regex to validate the line is not empty. && meets the basic requirements.
                     lineBuffer.add(line);
                 } else errorBuffer.add(line);
 
 
-//            System.out.println("error found at line:" + errorBuffer);
+//            System.out.println("error found at line:" + errorBuffer); //was using to check buffer error working.
                 HashMap<String, ArrayList<FlightData>> test = mapper(lineBuffer);
                 ArrayList<String> keys = new ArrayList<String>(test.keySet());
                 for (int x = 0; x < keys.size(); x++) {
@@ -69,13 +70,12 @@ public class Mapper {
 
         }
     }
-
+    //calls the reducer class 1 for each job.
     public static String reducer(String key, ArrayList<FlightData> data) {
         //      mymenu();
         String output = "";
         Reducer1 pickreducer = new Reducer1();
-        // int x=0;
-        // job = x;
+
         if (job == 1) {
             Reducer1.reducerOne(key, data);
         } else if (job == 2) {
@@ -99,64 +99,27 @@ public class Mapper {
             if (mapdata.containsKey(flight.getFlightID())) { //checking if the data for the oject contains hash key Flightdata
                 mapdata.get(flight.getFlightID()).add(flight);
             }
-            else if (mapdata.containsKey(flight.getFromID())) {
+            else if (mapdata.containsKey(flight.getFromID())) { //for airport ID (from - to)
                 mapdata.get(flight.getFromID()).add(flight);
                 ArrayList<FlightData> noID2 = new ArrayList<>(); //creating an array for noID
                 noID2.add(flight);
                 mapdata.put(flight.getFlightID(), noID2);
             }
-            else {
+            else { //for data not assigned to a key
                 ArrayList<FlightData> noID = new ArrayList<>(); //creating an array for noID
                 noID.add(flight);
                 mapdata.put(flight.getFlightID(), noID);
 
-                //  System.out.println(mapdata);
+          //was using this to test the output was working      //  System.out.println(mapdata);
 
 
             }
 
-            return mapdata;
+
 
         }
 
-        /*
-
-        if (job == 3) {
-            for (String key : mapdata.keySet()) {
-                Reducer job1 = new Reducer(key, mapdata.get(key));
-                job1.start();
-                reducerArrayList.add(job1);
-                job1.numPassengers(key, flightDataHashMap);
-            }
-
-            for (Reducer R1 : reducerArrayList) {
-                try {
-                    R1.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-            }
-
-        }else if (job == 2) {
-            for (String key : mapdata.keySet()) {
-                Reducer job2 = new Reducer(key, mapdata.get(key));
-                job2.start();
-                reducerArrayList.add(job2);
-                job2.getTheflight(theFlight);
-            }
-
-            for (Reducer R2 : reducerArrayList) {
-                try {
-                    R2.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-
-
-        }
-*/
+        return mapdata;
     }
 
 }
