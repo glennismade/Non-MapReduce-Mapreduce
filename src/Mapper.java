@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.security.Key;
@@ -14,9 +15,20 @@ import java.io.FileWriter;
 public class Mapper {
 
     String str1;
-    static int job;
+    public static int job = 0;
 
     public static void main(String[] args) {
+
+
+        System.out.println(" \n please select a job \n");
+        System.out.println("1: number of pasengers per flight \n");
+        System.out.println("2: Number of flights per airport \n");
+        System.out.println("3: flight details \n");
+        Scanner pick = new Scanner(System.in);
+        job = pick.nextInt();
+        //  pick.close();
+        System.out.println(job);
+
 
         //file reading - here.
         Scanner filePathInput = new Scanner(System.in);
@@ -44,14 +56,35 @@ public class Mapper {
                     lineBuffer.add(line);
                 } else errorBuffer.add(line);
 
-            }
-//            System.out.println("error found at line:" + errorBuffer);
-            HashMap<String, ArrayList<FlightData>> test = mapper(lineBuffer);
 
-            //  System.out.println(errorBuffer);
+//            System.out.println("error found at line:" + errorBuffer);
+                HashMap<String, ArrayList<FlightData>> test = mapper(lineBuffer);
+                ArrayList<String> keys = new ArrayList<String>(test.keySet());
+                for (int x = 0; x < keys.size(); x++) {
+                    System.out.println(reducer(keys.get(x), test.get(keys.get(x))));
+                }
+                //  System.out.println(errorBuffer);
+
+            }
 
         }
+    }
 
+    public static String reducer(String key, ArrayList<FlightData> data) {
+        //      mymenu();
+        String output = "";
+        Reducer1 pickreducer = new Reducer1();
+        // int x=0;
+        // job = x;
+        if (job == 1) {
+            Reducer1.reducerOne(key, data);
+        } else if (job == 2) {
+            Reducer1.reducerTwo(key, data);
+        } else
+            Reducer1.reducerThree(key, data);
+        //  System.out.println(job);
+
+        return output;
     }
 
     //Mapper function
@@ -65,26 +98,28 @@ public class Mapper {
             mapdata.get(flight.getFlightID()); //getting the flight data
             if (mapdata.containsKey(flight.getFlightID())) { //checking if the data for the oject contains hash key Flightdata
                 mapdata.get(flight.getFlightID()).add(flight);
-            } else {
+            }
+            else if (mapdata.containsKey(flight.getFromID())) {
+                mapdata.get(flight.getFromID()).add(flight);
+                ArrayList<FlightData> noID2 = new ArrayList<>(); //creating an array for noID
+                noID2.add(flight);
+                mapdata.put(flight.getFlightID(), noID2);
+            }
+            else {
                 ArrayList<FlightData> noID = new ArrayList<>(); //creating an array for noID
                 noID.add(flight);
                 mapdata.put(flight.getFlightID(), noID);
+
+                //  System.out.println(mapdata);
+
+
             }
-            System.out.println(mapdata);
+
+            return mapdata;
 
         }
 
-        ArrayList<Reducer> reducerArrayList = new ArrayList<>();
-
-
-        System.out.println(" \n please select a job \n");
-        System.out.println("1: Number of flights per airport \n");
-        System.out.println("2: flight details \n");
-        System.out.println("3: number of pasengers per flight \n");
-
-        Scanner jobselection = new Scanner(System.in);
-
-         job = jobselection.nextInt();
+        /*
 
         if (job == 3) {
             for (String key : mapdata.keySet()) {
@@ -121,10 +156,9 @@ public class Mapper {
 
 
         }
-
-    return mapdata;
-
-}
+*/
+    }
 
 }
+
 
