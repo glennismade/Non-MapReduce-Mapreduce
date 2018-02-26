@@ -125,9 +125,6 @@ public class Mapper {
 
 
             }
-
-
-
         }
 
         return mapdata;
